@@ -1,0 +1,18 @@
+{
+  "slug": "gog-rag-bot",
+  "title": "GoG RAG 客服机器人",
+  "subtitle": "用RAG重构游戏客服体验",
+  "description": "基于 RAG 架构构建游戏客服机器人，大幅降低重复工单，提升玩家服务体验",
+  "category": "rag",
+  "tags": ["RAG", "向量检索", "知识库", "pgvector"],
+  "techStack": ["FastAPI", "React/Vite", "DashScope/Qwen", "Supabase pgvector", "HuggingFace Embeddings"],
+  "status": "shipped",
+  "priority": 2,
+  "featured": true,
+  "visible": true,
+  "thumbnail": "",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2025-10-01",
+  "updatedAt": "2026-02-01"
+}

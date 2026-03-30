@@ -1,0 +1,18 @@
+{
+  "slug": "one-prompt-away",
+  "title": "One Prompt Away",
+  "subtitle": "AI行业深度观察公众号",
+  "description": "运营 AI 行业深度分析 Newsletter，覆盖 agentic engineering、人形机器人、全球 AI 基础设施投资等主题",
+  "category": "content",
+  "tags": ["Newsletter", "内容运营", "AI行业分析", "微信公众号"],
+  "techStack": ["微信公众号"],
+  "status": "shipped",
+  "priority": 4,
+  "featured": false,
+  "visible": true,
+  "thumbnail": "./assets/thumbnail.png",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2026-02-01",
+  "updatedAt": "2026-03-20"
+}

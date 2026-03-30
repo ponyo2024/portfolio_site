@@ -1,0 +1,18 @@
+{
+  "slug": "game-market-agent",
+  "title": "Game Market Intelligence Agent",
+  "subtitle": "用AI Agent自动生成游戏竞品周报",
+  "description": "构建多步骤 Agent，自动抓取竞品数据、生成分析报告并推送至飞书群组",
+  "category": "agent",
+  "tags": ["Agent", "Tool Use", "Function Calling", "飞书集成"],
+  "techStack": ["FastAPI", "React", "DashScope/Qwen", "SensorTower API", "飞书 Webhook"],
+  "status": "shipped",
+  "priority": 1,
+  "featured": true,
+  "visible": true,
+  "thumbnail": "",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2025-12-01",
+  "updatedAt": "2026-03-15"
+}

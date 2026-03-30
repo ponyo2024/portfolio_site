@@ -1,0 +1,18 @@
+{
+  "slug": "housing-data-pipeline",
+  "title": "房地产市场云端数据管道",
+  "subtitle": "从公开数据到云端分析的端到端数据工程项目",
+  "description": "整合 Jacksonville 房产税卷、成交记录和 GIS 数据，基于 AWS 构建完整的数据采集→清洗→建模→可视化管道",
+  "category": "foundation",
+  "tags": ["数据工程", "AWS", "SQL", "Tableau", "ETL"],
+  "techStack": ["AWS S3", "Glue Crawler", "Athena", "SQL", "Tableau", "Python"],
+  "status": "shipped",
+  "priority": 10,
+  "featured": false,
+  "visible": true,
+  "thumbnail": "./assets/thumbnail.png",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2025-01-01",
+  "updatedAt": "2025-03-01"
+}

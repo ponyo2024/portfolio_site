@@ -1,0 +1,18 @@
+{
+  "slug": "nlp-triage-assistant",
+  "title": "NLP 症状分诊助手",
+  "subtitle": "从文本分类到可交互 Chatbot 的端到端 AI 应用",
+  "description": "基于症状文本预测 41 种疾病，集成 Chatbot 交互和附近诊所推荐，用 baseline 对比证明模型选择必须服从数据特征",
+  "category": "foundation",
+  "tags": ["NLP", "BioBERT", "文本分类", "Chatbot", "Healthcare AI"],
+  "techStack": ["BioBERT", "TF-IDF", "Logistic Regression", "spaCy", "Google Places API"],
+  "status": "shipped",
+  "priority": 9,
+  "featured": false,
+  "visible": true,
+  "thumbnail": "./assets/thumbnail.png",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2025-03-01",
+  "updatedAt": "2025-05-01"
+}

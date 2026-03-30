@@ -1,0 +1,18 @@
+{
+  "slug": "game-market-datamining",
+  "title": "全球手游市场数据挖掘",
+  "subtitle": "用数据挖掘拆解全球移动游戏市场格局",
+  "description": "基于 115 万行 SensorTower 真实数据，对全球 Top 10,000 手游进行趋势预测、国家聚类和品类分析，输出可执行的市场策略",
+  "category": "foundation",
+  "tags": ["Data Mining", "聚类分析", "市场预测", "游戏分析", "Python"],
+  "techStack": ["Python", "K-Means", "PCA", "Linear Regression", "pandas"],
+  "status": "shipped",
+  "priority": 8,
+  "featured": false,
+  "visible": true,
+  "thumbnail": "./assets/thumbnail.png",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2025-06-01",
+  "updatedAt": "2025-08-01"
+}

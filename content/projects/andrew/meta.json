@@ -1,0 +1,18 @@
+{
+  "slug": "andrew",
+  "title": "Andrew / Talk to Ji",
+  "subtitle": "让AI真正\"记住\"用户的个性化助手",
+  "description": "探索 AI 长期记忆机制，构建真正了解用户的个性化对话助手",
+  "category": "memory",
+  "tags": ["记忆系统", "个性化", "流式对话", "Supabase"],
+  "techStack": ["Next.js", "DashScope/Qwen", "Supabase", "流式对话"],
+  "status": "shipped",
+  "priority": 3,
+  "featured": true,
+  "visible": true,
+  "thumbnail": "",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2025-11-01",
+  "updatedAt": "2026-01-15"
+}

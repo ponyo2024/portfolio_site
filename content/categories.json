@@ -1,0 +1,27 @@
+[
+  {
+    "id": "agent",
+    "label": "🤖 Agent × 工具调用",
+    "description": "Multi-step planning, tool use, model routing"
+  },
+  {
+    "id": "rag",
+    "label": "🔍 RAG × 检索增强",
+    "description": "检索增强生成，知识库构建"
+  },
+  {
+    "id": "memory",
+    "label": "🧠 记忆 × 个性化",
+    "description": "用户记忆，个性化交互"
+  },
+  {
+    "id": "content",
+    "label": "✍️ 内容 × 产品思维",
+    "description": "内容创作，产品实验"
+  },
+  {
+    "id": "foundation",
+    "label": "🔧 技术基础",
+    "description": "数据工程、数据挖掘、NLP 应用开发"
+  }
+]

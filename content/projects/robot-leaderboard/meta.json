@@ -1,0 +1,18 @@
+{
+  "slug": "robot-leaderboard",
+  "title": "Robot Leaderboard",
+  "subtitle": "全球机器人能力排行榜",
+  "description": "按能力领域分类的全球机器人排行榜网站，从公众号内容孵化的轻量级产品实验",
+  "category": "content",
+  "tags": ["产品实验", "数据可视化", "用户研究", "Next.js"],
+  "techStack": ["Next.js", "Vercel", "JSON"],
+  "status": "shipped",
+  "priority": 5,
+  "featured": false,
+  "visible": true,
+  "thumbnail": "./assets/thumbnail.png",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2026-02-15",
+  "updatedAt": "2026-03-20"
+}
