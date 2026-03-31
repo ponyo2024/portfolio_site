@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
 import {
   getAllProjects,
   getProjectBySlug,
@@ -138,7 +139,7 @@ export default async function ProjectPage(props: PageProps<'/projects/[slug]'>) 
 
         {/* MDX Content */}
         <article className="prose-dark mt-16">
-          <MDXRemote source={content} />
+          <MDXRemote source={content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
         </article>
 
         {/* Changelog */}

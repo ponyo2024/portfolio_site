@@ -140,3 +140,29 @@ body {
   font-style: italic;
   margin: 1.5rem 0;
 }
+
+.prose-dark table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+
+.prose-dark th {
+  background: #14141F;
+  font-weight: 600;
+  color: #F0F0F5;
+  text-align: left;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #1C1C2E;
+}
+
+.prose-dark td {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #1C1C2E;
+  color: #C4C4D0;
+}
+
+.prose-dark tr:hover {
+  background: #1A1A2A;
+}
