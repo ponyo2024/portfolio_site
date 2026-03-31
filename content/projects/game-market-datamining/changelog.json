@@ -1,1 +1,19 @@
-{ "entries": [] }
+{
+  "entries": [
+    {
+      "version": "1.0",
+      "date": "2025-08-01",
+      "title": "Final Project Submission",
+      "summary": "IE 7275 课程最终提交，完整分析报告 + Jupyter Notebook",
+      "changes": [
+        "115 万行 Sensor Tower 数据清洗与预处理",
+        "全球下载/收入趋势 EDA + 2025 线性回归预测",
+        "国家层面三种聚类方法（K-Means, Hierarchical, DBSCAN）",
+        "品类维度 PCA 降维 + K-Means 聚类",
+        "游戏层面 DAU × RPD 聚类（5 个产品类型）",
+        "卡方检验验证品类-聚类关联性",
+        "15 页 PDF 报告"
+      ]
+    }
+  ]
+}
