@@ -1,7 +1,7 @@
 const links = [
-  { label: 'Email', value: '待填写', href: 'mailto:待填写' },
-  { label: 'GitHub', value: 'github.com/待填写', href: 'https://github.com/' },
-  { label: 'LinkedIn', value: '待填写', href: '#' },
+  { label: 'Email', value: 'selmaj@163.com', href: 'mailto:selmaj@163.com' },
+  { label: 'GitHub', value: 'github.com/ponyo2024', href: 'https://github.com/ponyo2024/' },
+  { label: 'LinkedIn', value: 'Ji Weng', href: 'https://www.linkedin.com/in/ji-weng-075a96138/' },
 ]
 
 export default function Contact() {

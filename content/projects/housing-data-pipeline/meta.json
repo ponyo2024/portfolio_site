@@ -10,7 +10,7 @@
   "priority": 10,
   "featured": false,
   "visible": true,
-  "thumbnail": "./assets/thumbnail.png",
+  "thumbnail": "/images/housing-data-pipeline.png",
   "liveDemo": "",
   "github": "",
   "createdAt": "2025-01-01",

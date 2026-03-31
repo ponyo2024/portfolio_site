@@ -10,7 +10,7 @@
   "priority": 9,
   "featured": false,
   "visible": true,
-  "thumbnail": "./assets/thumbnail.png",
+  "thumbnail": "/images/nlp-triage-assistant.png",
   "liveDemo": "",
   "github": "https://github.com/ponyo2024/Disease-Prediction-Model-from-Symptoms",
   "createdAt": "2025-03-01",

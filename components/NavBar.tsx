@@ -28,13 +28,6 @@ export default function NavBar() {
           >
             联系
           </Link>
-          <a
-            href="/resume.pdf"
-            download
-            className="hidden sm:inline-flex px-4 py-1.5 text-xs font-mono border border-white/[0.06] rounded-lg text-muted hover:border-accent hover:text-accent transition-colors"
-          >
-            下载 PDF
-          </a>
         </div>
       </div>
     </nav>

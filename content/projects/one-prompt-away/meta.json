@@ -10,7 +10,7 @@
   "priority": 4,
   "featured": false,
   "visible": true,
-  "thumbnail": "./assets/thumbnail.png",
+  "thumbnail": "/images/one prompt away.png",
   "liveDemo": "",
   "github": "",
   "createdAt": "2026-02-01",

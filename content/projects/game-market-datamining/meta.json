@@ -10,7 +10,7 @@
   "priority": 8,
   "featured": false,
   "visible": true,
-  "thumbnail": "./assets/thumbnail.png",
+  "thumbnail": "/images/game-market-datamining.png",
   "liveDemo": "",
   "github": "https://github.com/ponyo2024/mobile_game_market_analysis",
   "createdAt": "2025-06-01",

@@ -10,7 +10,7 @@
   "priority": 5,
   "featured": false,
   "visible": true,
-  "thumbnail": "./assets/thumbnail.png",
+  "thumbnail": "/images/robot-leaderboard.png",
   "liveDemo": "https://ponyo2024.github.io/robot-leaderboard/",
   "github": "https://github.com/ponyo2024/robot-leaderboard",
   "createdAt": "2026-03-31",
