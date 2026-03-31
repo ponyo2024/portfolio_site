@@ -1,12 +1,74 @@
 {
   "entries": [
     {
-      "version": "1.0",
-      "date": "2025-12-01",
-      "title": "MVP 上线",
-      "summary": "初版上线，支持基础竞品数据抓取与报告生成",
+      "version": "v0.1",
+      "date": "2025-12",
+      "title": "SensorTower API Client 与数据采集基础",
+      "summary": "搭建 FastAPI 后端骨架，完成 SensorTower API 封装，实现 18 款竞品的收入与下载数据批量拉取",
       "changes": [
-        "待填写"
+        "封装 SensorTower sales_report_estimates / active_users / version_history 接口",
+        "实现 asyncio Semaphore + 170ms 间隔的 rate limit 控制",
+        "完成 YAML 竞品配置文件，映射 Unified App ID 与双平台 Platform App ID",
+        "处理 iOS/Android 字段差异、cents → USD 转换、国家代码标准化"
+      ]
+    },
+    {
+      "version": "v0.2",
+      "date": "2026-01",
+      "title": "Rules-based 周报 Pipeline",
+      "summary": "实现周报的固定流程：数据聚合、周环比计算、Top 3 变化排序，生成结构化报告数据",
+      "changes": [
+        "实现自然周对齐（周一至周日）的数据聚合逻辑",
+        "自动计算收入/下载/DAU 周环比",
+        "Top 3 收入与下载变化检测，关联版本更新信息",
+        "批量化优化将 API 调用耗时从 80-100 秒降至 5-6 秒"
+      ]
+    },
+    {
+      "version": "v0.3",
+      "date": "2026-01",
+      "title": "Qwen LLM 集成与 Data Grounding",
+      "summary": "接入 Qwen 3.5 Plus 生成执行摘要，确立 Data Grounding 原则——LLM 只做解读不做计算",
+      "changes": [
+        "接入 DashScope API，Qwen 基于结构化 JSON 生成 2-4 条洞察摘要",
+        "Prompt 设计强制要求所有数字引用自提供的数据",
+        "实现 Qwen 服务不可用时自动降级为纯数据版周报"
+      ]
+    },
+    {
+      "version": "v0.4",
+      "date": "2026-02",
+      "title": "飞书 Bot 集成与消息卡片推送",
+      "summary": "完成飞书 Bot 交互层，周报以 Interactive Card 格式推送，支持 Human-in-the-loop 确认流程",
+      "changes": [
+        "实现飞书 Bot 消息接收与路由（周报/确认/自然语言查询）",
+        "设计 Interactive Card 模板：报头、执行摘要、Top 3、核心指标明细",
+        "支持 Webhook 群推送与消息回复两种模式",
+        "实现生成预览 → 修改意见 → 确认推送的 Human-in-the-loop 流程"
+      ]
+    },
+    {
+      "version": "v0.5",
+      "date": "2026-02",
+      "title": "Agentic 自然语言查询",
+      "summary": "基于原生 OpenAI Function Calling 实现探索性查询 Agent，支持飞书中自然语言提问",
+      "changes": [
+        "定义 5 个工具函数（收入、下载、DAU、国家明细、版本更新）",
+        "实现原生 Function Calling 循环，最多 8 轮工具调用",
+        "30 秒全局超时与无限循环保护",
+        "支持多工具组合调用（如对比两款游戏的 DAU）"
+      ]
+    },
+    {
+      "version": "v1.0",
+      "date": "2026-03",
+      "title": "容错降级与演示安全网",
+      "summary": "完善所有 failure mode 处理：API 限流退避、数据缺失降级、演示缓存快照，达到可演示状态",
+      "changes": [
+        "429 状态码指数退避重试，月度配额监控与缓存降级",
+        "单款游戏数据获取失败不影响整体报告，标注数据口径",
+        "成功生成周报后自动缓存快照，提供独立的缓存推送端点",
+        "中国大陆 Android 数据缺失的设计层面兼容（android_app_id = null）"
       ]
     }
   ]

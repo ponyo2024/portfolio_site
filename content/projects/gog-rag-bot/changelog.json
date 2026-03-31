@@ -1,12 +1,39 @@
 {
   "entries": [
     {
-      "version": "1.0",
+      "version": "0.1",
       "date": "2025-10-01",
-      "title": "MVP 上线",
-      "summary": "基础 RAG 问答功能上线",
+      "title": "MVP：RAG 基础链路跑通",
+      "summary": "爬取文档并搭建完整 RAG 链路，首次测试准确率 6/15",
       "changes": [
-        "待填写"
+        "爬取 83 篇 Guns of Glory 公开文档",
+        "搭建 embedding → Supabase pgvector → 检索 → Qwen 生成的完整链路",
+        "首次测试：6/15 准确率（问题：chunker 误删短 FAQ、LLM 过度保守拒答）"
+      ]
+    },
+    {
+      "version": "0.2",
+      "date": "2025-11-01",
+      "title": "质量修复 + Long Context 对比实验",
+      "summary": "RAG 准确率提升至 14/15，实现 Long Context 方案并完成对比实验",
+      "changes": [
+        "修复 chunker 过滤逻辑（放宽 is_title_only_text 阈值）",
+        "调整 system prompt（从「不知道就说不知道」改为「有部分信息就尽量回答」）",
+        "手动补充 15 条高频客服 FAQ（账号、支付、技术、活动）",
+        "RAG 准确率提升至 14/15",
+        "实现 Long Context 方案，完成 15 题对比实验"
+      ]
+    },
+    {
+      "version": "1.0",
+      "date": "2026-02-01",
+      "title": "全栈部署上线",
+      "summary": "FastAPI 后端部署至 Railway，React 前端部署至 Vercel，产出对比实验报告",
+      "changes": [
+        "FastAPI 后端部署至 Railway（Python 3.11 + CPU-only PyTorch）",
+        "React 前端部署至 Vercel（左右分栏对比 UI）",
+        "解决部署中的 Python 版本兼容、PyTorch 体积优化、Supabase API Key 格式等问题",
+        "产出对比实验报告 + 成本分析"
       ]
     }
   ]

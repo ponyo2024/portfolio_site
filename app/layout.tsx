@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: '翁冀 Ji Weng — AI PM Portfolio',
   description:
     '游戏运营转型 AI 产品经理。10年游戏运营经验，专注 Agent、RAG、个性化 AI 产品设计与落地。',
+  icons: {
+    icon: '/images/favicon.png',
+  },
 }
 
 export default function RootLayout({

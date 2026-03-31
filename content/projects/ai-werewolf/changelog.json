@@ -1,0 +1,42 @@
+{
+  "entries": [
+    {
+      "version": "v0.1",
+      "date": "2026-03-18",
+      "title": "MVP · 状态机跑通",
+      "summary": "GameEngine 骨架和基础 Agent 实现",
+      "changes": [
+        "完成 GameEngine 状态机骨架（夜晚→天亮→发言→投票→循环）",
+        "实现 6 种角色 Agent 基类与 prompt 模板",
+        "接入 DashScope / Qwen，mock 数据跑完完整一局",
+        "WebSocket 消息格式确定，基础游戏事件可推送"
+      ]
+    },
+    {
+      "version": "v0.2",
+      "date": "2026-03-22",
+      "title": "Failure Modes · 鲁棒性完善",
+      "summary": "7 种 failure mode 的检测与兜底",
+      "changes": [
+        "实现信息泄露检测器（speak 前过滤 + 最多 3 次重试）",
+        "添加置信度追踪与低置信重推理机制（阈值 50%）",
+        "狼人协商逻辑：2 轮协商 + 随机兜底",
+        "投票死锁处理：决选发言轮 + 跳过放逐",
+        "模型超时兜底：30s 后执行随机合法操作"
+      ]
+    },
+    {
+      "version": "v1.0",
+      "date": "2026-03-26",
+      "title": "前端完整 · 上线部署",
+      "summary": "上帝视角 UI 和生产部署",
+      "changes": [
+        "玩家卡片：temperature meta 标签、关键词高亮、置信度条、低置信红色警告边框",
+        "Agent 行为 tab：完整工具调用轨迹，含 failure mode 触发记录，可折叠展开",
+        "信息差对比面板：实时展示 agent 间的信息不对称",
+        "昼夜视觉切换（深色/浅色双主题，CSS transition）",
+        "部署：Railway（FastAPI + WebSocket）+ Vercel（React）"
+      ]
+    }
+  ]
+}

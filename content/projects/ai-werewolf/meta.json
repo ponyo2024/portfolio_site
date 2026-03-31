@@ -1,0 +1,18 @@
+{
+  "slug": "ai-werewolf",
+  "title": "AI 狼人杀",
+  "subtitle": "Multi-Agent 博弈系统的上帝视角",
+  "description": "6 个 AI Agent 在信息不对称的狼人杀游戏中自主推理、协商和博弈，完整展示 multi-agent planning、tool use 和 failure modes",
+  "category": "agentic",
+  "tags": ["Multi-Agent", "博弈推理", "Tool Use", "Failure Modes"],
+  "techStack": ["FastAPI", "WebSocket", "React", "DashScope/Qwen"],
+  "status": "shipped",
+  "priority": 4,
+  "featured": true,
+  "visible": true,
+  "thumbnail": "/images/ai-werewolf.png",
+  "liveDemo": "",
+  "github": "",
+  "createdAt": "2026-03-18",
+  "updatedAt": "2026-03-26"
+}

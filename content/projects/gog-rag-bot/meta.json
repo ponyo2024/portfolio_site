@@ -11,8 +11,8 @@
   "featured": true,
   "visible": true,
   "thumbnail": "/images/gog-rag-bot.png",
-  "liveDemo": "",
-  "github": "",
+  "liveDemo": "https://gog-cs-bot.vercel.app",
+  "github": "https://github.com/ponyo2024/gog-cs-bot",
   "createdAt": "2025-10-01",
   "updatedAt": "2026-02-01"
 }

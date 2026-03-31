@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-24 md:py-32 max-w-5xl mx-auto">
+    <section className="px-6 md:px-12 lg:px-24 pt-20 pb-12 md:pt-28 md:pb-16 max-w-5xl mx-auto">
       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
         {/* Text */}
         <div className="flex-1">

@@ -1,12 +1,51 @@
 {
   "entries": [
     {
-      "version": "1.0",
-      "date": "2025-11-01",
-      "title": "MVP 上线",
-      "summary": "基础记忆系统与对话功能上线",
+      "version": "v0.1",
+      "date": "2026-02",
+      "title": "Chat Foundation",
+      "summary": "基于 Next.js + Tailwind 搭建流式对话 UI，接入 DashScope/Qwen API，实现基础流式响应与错误处理。",
       "changes": [
-        "待填写"
+        "Next.js + Tailwind 搭建流式对话 UI",
+        "接入 DashScope/Qwen API",
+        "基础流式响应实现",
+        "错误处理机制"
+      ]
+    },
+    {
+      "version": "v0.2",
+      "date": "2026-02",
+      "title": "Memory System",
+      "summary": "实现 LLM 驱动的记忆提取，Supabase 持久化存储 + JSON 降级方案，记忆面板可视化管理，Key-based 去重机制。",
+      "changes": [
+        "LLM 驱动的记忆自动提取",
+        "Supabase 持久化存储 + JSON Fallback 降级方案",
+        "记忆面板：查看与删除记忆条目",
+        "Key-based 槽位去重机制"
+      ]
+    },
+    {
+      "version": "v0.3",
+      "date": "2026-03",
+      "title": "Persona Architecture",
+      "summary": "soul.md 外部化人格定义，ANDREW_TONE 多语气支持，基于微博语料的 Talk to Ji 模式，人格路由系统。",
+      "changes": [
+        "soul.md 外部化人格定义",
+        "ANDREW_TONE 多语气风格支持",
+        "Talk to Ji 模式：基于微博语料还原真人人格",
+        "Persona Router 人格路由系统"
+      ]
+    },
+    {
+      "version": "v1.0",
+      "date": "2026-03",
+      "title": "Production Deploy",
+      "summary": "Vercel 部署上线，Andrew 首页 + Talk to Ji 入口，演示脚本与作品集文档完善。",
+      "changes": [
+        "Vercel 部署上线",
+        "Andrew 首页 + Talk to Ji 入口页面",
+        "Demo 演示脚本",
+        "作品集文档完善"
       ]
     }
   ]
