@@ -1,12 +1,43 @@
 {
   "entries": [
     {
-      "version": "1.0",
-      "date": "2026-02-15",
-      "title": "MVP 上线",
-      "summary": "Robot Leaderboard 首版发布",
+      "version": "1.2",
+      "date": "2026-03-31",
+      "title": "数据更新至 2026 年 3 月",
+      "summary": "全面更新 8 个机器人数据，Figure 02 升级为 Figure 03",
       "changes": [
-        "待填写"
+        "Industrial 冠军更换为 Figure 03（白宫亮相、BMW 部署）",
+        "π₀ 估值从 $2B 更新至 $11B，新增 π0.5 和 MEM",
+        "小布米公司修正为 NOETIX (松延动力)",
+        "Spot 新增数据中心巡检场景和 FieldAI 合作",
+        "Galbot G1 新增北京药房机器人部署",
+        "MagicBot Z1 新增春晚后京东售罄信息",
+        "类别标签放大并加毛玻璃效果，提升可读性"
+      ]
+    },
+    {
+      "version": "1.1",
+      "date": "2026-03-31",
+      "title": "图片支持与 UI 优化",
+      "summary": "为每个机器人添加图片，优化卡片视觉效果",
+      "changes": [
+        "每张卡片新增机器人图片区域（contain + 暗角遮罩）",
+        "隐藏筛选栏系统滚动条，改用渐变遮罩 + 箭头按钮",
+        "修复 accent 彩色线与卡片间隙（改为 border-top）",
+        "全面提升暗色主题下文字对比度"
+      ]
+    },
+    {
+      "version": "1.0",
+      "date": "2026-03-31",
+      "title": "首版上线",
+      "summary": "Robot Leaderboard 网站首版发布，8 个能力维度、暗色主题",
+      "changes": [
+        "Next.js 16 + Tailwind CSS 4 静态站点搭建",
+        "8 个类别卡片：工业、运动、灵巧手、性价比、四足、智能、耐力、交互",
+        "类别筛选栏，支持单选过滤",
+        "卡片渐入动画和 hover 交互",
+        "GitHub Actions 自动部署到 GitHub Pages"
       ]
     }
   ]

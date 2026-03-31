@@ -1,18 +1,18 @@
 {
   "slug": "robot-leaderboard",
-  "title": "Robot Leaderboard",
-  "subtitle": "全球机器人能力排行榜",
-  "description": "按能力领域分类的全球机器人排行榜网站，从公众号内容孵化的轻量级产品实验",
+  "title": "Best Robot in the World",
+  "subtitle": "按能力维度策展的全球机器人排行榜",
+  "description": "\"One Prompt Away\" 公众号孵化的内容产品 — 一个暗色主题、杂志风格的机器人排行榜网站，按 8 大能力维度（工业、运动、灵巧手、性价比、四足、智能、耐力、交互）策展全球最强机器人，数据驱动、实时更新。",
   "category": "content",
-  "tags": ["产品实验", "数据可视化", "用户研究", "Next.js"],
-  "techStack": ["Next.js", "Vercel", "JSON"],
+  "tags": ["产品实验", "数据可视化", "Editorial Design", "响应式"],
+  "techStack": ["Next.js 16", "Tailwind CSS 4", "GitHub Pages", "GitHub Actions"],
   "status": "shipped",
   "priority": 5,
   "featured": false,
   "visible": true,
   "thumbnail": "./assets/thumbnail.png",
-  "liveDemo": "",
-  "github": "",
-  "createdAt": "2026-02-15",
-  "updatedAt": "2026-03-20"
+  "liveDemo": "https://ponyo2024.github.io/robot-leaderboard/",
+  "github": "https://github.com/ponyo2024/robot-leaderboard",
+  "createdAt": "2026-03-31",
+  "updatedAt": "2026-03-31"
 }
