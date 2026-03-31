@@ -1,1 +1,17 @@
-{ "entries": [] }
+{
+  "entries": [
+    {
+      "version": "1.0",
+      "date": "2025-05-01",
+      "title": "Final Project Submission",
+      "summary": "IE 7500 Group C 最终提交",
+      "changes": [
+        "BioBERT fine-tuning pipeline (5-fold CV, 93.15% accuracy)",
+        "TF-IDF + Logistic Regression baseline (97.51% accuracy)",
+        "症状输入 Chatbot + Google Places API 诊所推荐",
+        "12 页最终报告",
+        "Kaggle 数据集预处理（4920 → 2183 行去重）"
+      ]
+    }
+  ]
+}

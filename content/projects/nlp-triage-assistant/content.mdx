@@ -2,19 +2,89 @@
 
 ## 项目背景
 
-待填写：IE 7500 课程项目。构建一个从症状文本预测疾病的 NLP 系统，并将模型集成到 Chatbot 中。
+这是 Northeastern University **IE 7500** 课程的小组项目（Group C），团队成员包括 Paolo Ferrara、Muhammad Arish Salam Bukhari 和我。**我是这个项目的主要贡献者** — 负责核心模型评估、项目架构搭建和文档撰写（7/15 commits），包括 BioBERT 模型的 fine-tuning pipeline、5-fold 交叉验证框架、以及最终报告的关键分析部分。
+
+目标：构建一个端到端的 NLP 系统，从症状文本预测 41 种疾病，并集成到可交互的 Chatbot 中。
+
+## 数据集
+
+| 指标 | 数值 |
+|------|------|
+| 来源 | Kaggle "Disease Symptom Prediction" |
+| 原始数据 | 4,920 行 |
+| 去重后 | 2,183 行（55% 重复率） |
+| 疾病类别 | 41 种 |
+| 特征列 | 17 个症状列 |
+| 类别不平衡 | Common Cold 116 例 vs. Heart Attack 12 例 |
+
+**预处理**：下划线转空格、全小写、随机 mask（p=0.2）防过拟合。尝试过词形还原和同义词替换，但引入噪声，最终弃用。
 
 ## 技术方案
 
-待填写：
-- Baseline: TF-IDF + Logistic Regression
-- 进阶: BioBERT fine-tuning
-- Chatbot 集成：用户输入症状 → 疾病预测 → 免责声明 → 附近诊所推荐（Google Places API）
+### Baseline: TF-IDF + Logistic Regression
+
+将症状拼接为文本，用 TF-IDF 向量化后接逻辑回归。简单高效，作为性能基准。
+
+### 进阶模型: BioBERT Fine-tuning
+
+选用 `dmis-lab/biobert-base-cased-v1.1` — 在生物医学语料上预训练的 BERT 变体，对医学术语（如 "dischromic_patches"、"nodal_skin_eruptions"）有更好的理解。
+
+- 5-fold 交叉验证（80/20 split）
+- 每 fold 训练 2 epochs
+- Hugging Face Transformers + PyTorch
+
+### Chatbot 集成
+
+- 用户输入症状文本（自然语言或预设选项）
+- 模型预测疾病 + 医学免责声明
+- 调用 Google Places API 推荐附近诊所
+- spaCy 做症状实体提取
 
 ## 关键发现
 
-待填写：在该数据集上（2183 样本，41 类，类别不平衡），TF-IDF + Logistic Regression baseline 的表现优于 BioBERT。这一反直觉的结果恰好说明：模型选择必须服从数据特征，不是越大越好。
+### Baseline 反超 BioBERT — 最重要的一课
+
+| 模型 | Accuracy | Macro F1 | Weighted F1 |
+|------|----------|----------|-------------|
+| TF-IDF + LR | **97.51%** | **0.9437** | **0.9749** |
+| BioBERT | 93.15% | 0.8010 | 0.9154 |
+
+**这个反直觉的结果是整个项目最有价值的发现。** 原因分析：
+
+1. **数据线性可分**: 2,183 个样本、41 个类别，症状组合的模式足够简单，线性模型就能捕获
+2. **样本量不足**: BioBERT 的参数量远超数据规模，容易在小类别上过拟合
+3. **类别不平衡严重**: 少数类（Allergy、Heart Attack，仅 12-15 例）在 BioBERT 上 F1 = 0，被完全忽略
+
+### 类别不平衡的代价
+
+- 多数类表现优异：Common Cold F1 = 1.0
+- 少数类完全失败：Allergy、Fungal Infection、Heart Attack F1 = 0
+- **临床含义**：模型恰好在最危险的疾病上最不可靠
+
+### 手动测试示例
+
+- "stomach_pain, vomiting, cough" → **GERD** (correct)
+- "itching, skin_rash" → **Psoriasis** (should be Fungal Infection — 症状重叠导致误分)
+- "continuous_sneezing, chills" → **Paroxysmal Positional Vertigo** (should be Allergy — 少数类无法学习)
 
 ## PM 视角
 
-待填写：这个项目展示了"把 NLP 模型接成实际应用"的完整链路，以及数据驱动的模型选择思维。
+这个项目展示了三个层面的认知：
+
+**1. 模型选择必须服从数据特征**
+
+"用最先进的模型" ≠ "最好的结果"。在小数据集上，简单模型的可解释性和稳定性往往更有价值。这个思维直接影响了我后续在 AI 项目中的技术选型决策。
+
+**2. 从模型到产品的完整链路**
+
+学术项目往往止步于 "accuracy 多少"。我们把模型接入了 Chatbot，加了免责声明、诊所推荐、用户记忆 — 这是从 "模型能用" 到 "产品可用" 的跨越。
+
+**3. 失败比成功更有教育意义**
+
+BioBERT 没有打败 baseline 这件事本身，比 BioBERT 取得 99% accuracy 更值得写进 portfolio。它说明我理解技术的边界，不是盲目追求复杂度。
+
+## 改进方向
+
+- **类别平衡**: SMOTE 过采样（初步测试 macro F1 提升至 0.82）、合并相似类别（如多种 Hepatitis）
+- **数据增强**: 引入 SNOMED CT 医学本体做症状同义词扩展
+- **Chatbot 升级**: 多轮对话（"咳嗽是干咳还是有痰？"）、接入 PubMed API
