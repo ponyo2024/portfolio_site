@@ -19,6 +19,7 @@ export interface ProjectMeta {
   tags: string[]
   techStack: string[]
   status: 'shipped' | 'in-progress' | 'planned'
+  statusLabel?: string
   priority: number
   featured: boolean
   visible: boolean
@@ -26,6 +27,7 @@ export interface ProjectMeta {
   media?: ProjectMedia
   liveDemo: string
   github: string
+  externalUrl?: string
   createdAt: string
   updatedAt: string
 }

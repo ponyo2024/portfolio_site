@@ -8,7 +8,7 @@
   "techStack": ["FastAPI", "React", "DashScope/Qwen", "SensorTower API", "飞书 Webhook"],
   "status": "shipped",
   "priority": 1,
-  "featured": true,
+  "featured": false,
   "visible": true,
   "thumbnail": "/images/game-market-agent.png",
   "liveDemo": "",

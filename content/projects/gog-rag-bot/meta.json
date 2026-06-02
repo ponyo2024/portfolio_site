@@ -8,7 +8,7 @@
   "techStack": ["FastAPI", "React/Vite", "DashScope/Qwen", "Supabase pgvector", "HuggingFace Embeddings"],
   "status": "shipped",
   "priority": 2,
-  "featured": true,
+  "featured": false,
   "visible": true,
   "thumbnail": "/images/gog-rag-bot.png",
   "liveDemo": "https://gog-cs-bot.vercel.app",

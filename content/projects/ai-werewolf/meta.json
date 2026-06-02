@@ -8,7 +8,7 @@
   "techStack": ["FastAPI", "WebSocket", "React", "DashScope/Qwen"],
   "status": "shipped",
   "priority": 4,
-  "featured": true,
+  "featured": false,
   "visible": true,
   "thumbnail": "/images/ai-werewolf.png",
   "liveDemo": "",

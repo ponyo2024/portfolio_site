@@ -1,0 +1,20 @@
+{
+  "slug": "laoweng-yuji",
+  "title": "老翁渔记",
+  "subtitle": "送给爸爸的钓鱼日志小程序",
+  "description": "一个为爸爸做的微信小程序，记录每一次出钓的天气、水域、鱼获和当时的心情。它不追求复杂，只想把他的热爱好好留住。",
+  "category": "product",
+  "tags": ["微信小程序", "家人", "私人定制"],
+  "techStack": ["WeChat MiniProgram", "CloudBase"],
+  "status": "shipped",
+  "statusLabel": "体验版",
+  "priority": 2,
+  "featured": true,
+  "visible": true,
+  "thumbnail": "/images/laoweng-cover.png",
+  "liveDemo": "",
+  "github": "",
+  "externalUrl": "",
+  "createdAt": "2026-03-01",
+  "updatedAt": "2026-05-15"
+}

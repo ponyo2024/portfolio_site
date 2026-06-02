@@ -1,0 +1,20 @@
+{
+  "slug": "hush",
+  "title": "Hush / 缓缓",
+  "subtitle": "一间可以安静待一会儿的数字小屋",
+  "description": "当你需要被听见，但不急着被建议，Hush 会像一面温柔的镜子，记住你的状态，也陪你把心里的话慢慢说清楚。",
+  "category": "product",
+  "tags": ["情绪陪伴", "记忆", "Cozy"],
+  "techStack": ["React Native", "Expo"],
+  "status": "in-progress",
+  "statusLabel": "正在做",
+  "priority": 1,
+  "featured": true,
+  "visible": true,
+  "thumbnail": "/images/hush-cover.png",
+  "liveDemo": "",
+  "github": "",
+  "externalUrl": "",
+  "createdAt": "2026-04-01",
+  "updatedAt": "2026-06-02"
+}

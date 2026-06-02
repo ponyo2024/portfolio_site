@@ -8,7 +8,7 @@
   "techStack": ["Next.js", "DashScope/Qwen", "Supabase", "流式对话"],
   "status": "shipped",
   "priority": 3,
-  "featured": true,
+  "featured": false,
   "visible": true,
   "thumbnail": "/images/andrew.png",
   "liveDemo": "",

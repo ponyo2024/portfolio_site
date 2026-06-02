@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { ProjectMeta } from '@/lib/projects'
 
 const categoryLabel: Record<string, string> = {
@@ -20,9 +21,11 @@ function Thumbnail({ project, className }: { project: ProjectMeta; className?: s
 
   if (src) {
     return (
-      <img
+      <Image
         src={src}
         alt={project.title}
+        width={900}
+        height={600}
         className={`w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 ${className || ''}`}
       />
     )

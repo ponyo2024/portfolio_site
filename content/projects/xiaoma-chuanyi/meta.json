@@ -1,0 +1,20 @@
+{
+  "slug": "xiaoma-chuanyi",
+  "title": "小马穿衣",
+  "subtitle": "每天都会用到的穿衣搭配工具",
+  "description": "为自己的衣橱和每周搭配做的 PWA。它用清楚的规则帮我减少早晨的犹豫，不依赖照片、不依赖 AI，也不假装比我更懂我的生活。",
+  "category": "product",
+  "tags": ["PWA", "自用工具", "穿衣"],
+  "techStack": ["Vite", "React", "Supabase"],
+  "status": "shipped",
+  "statusLabel": "自用中",
+  "priority": 3,
+  "featured": true,
+  "visible": true,
+  "thumbnail": "/images/xiaoma-cover.png",
+  "liveDemo": "",
+  "github": "",
+  "externalUrl": "",
+  "createdAt": "2026-02-15",
+  "updatedAt": "2026-06-01"
+}
